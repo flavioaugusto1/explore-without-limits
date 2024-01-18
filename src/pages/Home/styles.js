@@ -15,6 +15,8 @@ export const Container = styled.main`
     justify-content: center;
     flex-direction: column;
 
+    margin-bottom: 9.3rem;
+
     img {
       width: 36.4rem;
       height: 37rem;

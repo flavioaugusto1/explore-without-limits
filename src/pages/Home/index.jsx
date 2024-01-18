@@ -4,6 +4,8 @@ import { Card } from "../../components/Card";
 import Logo from "../../assets/space.png";
 import KeyDown from "../../assets/keyDown.svg";
 
+import Planet1 from "../../assets/planet1.png";
+
 export function Home() {
   return (
     <Container>
@@ -16,8 +18,12 @@ export function Home() {
         </div>
       </section>
 
-      <section className="cards">
-        <Card />
+      <section className="content cards">
+        <Card
+          image={Planet1}
+          title="Não pare nunca"
+          description='Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.'
+        />
       </section>
     </Container>
   );

@@ -68,6 +68,12 @@ export const Container = styled.main`
 
   .cards {
     background: ${({ theme }) => theme.COLORS.PURPLE_LINEAR};
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
   }
 
   @keyframes topDown {

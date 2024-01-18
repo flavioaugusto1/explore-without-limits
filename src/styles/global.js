@@ -10,4 +10,9 @@ export default createGlobalStyle`
   :root {
     font-size: 62.5%;
   }
+
+  html, body, input {
+    font-family: 'Mulish', sans-serif;
+  }
+
 `;

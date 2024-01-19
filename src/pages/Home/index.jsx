@@ -45,38 +45,41 @@ export function Home() {
         </div>
       </section>
 
-      <section className="form-content content">
-        <h1>Entre em contato</h1>
-        <form>
-          <div className="input-form">
-            <IconUser />
-            <label htmlFor="name-user">Seu nome</label>
-            <Input
-              type="text"
-              placeholder="Seu nome"
-              id="name-user"
-              name="name-user"
+      <section className="form-content">
+        <div className="content">
+          <form>
+            <h1>Entre em contato</h1>
+
+            <div className="input-form">
+              <IconUser />
+              <label htmlFor="name-user">Seu nome</label>
+              <Input
+                type="text"
+                placeholder="Seu nome"
+                id="name-user"
+                name="name-user"
+              />
+            </div>
+
+            <div className="input-form">
+              <IconEmail />
+              <label htmlFor="email-user">Seu Email</label>
+              <Input
+                type="email"
+                placeholder="Email"
+                id="email-user"
+                name="email-user"
+              />
+            </div>
+
+            <textarea
+              placeholder="Digite sua mensagem aqui..."
+              className="input-form"
             />
-          </div>
 
-          <div className="input-form">
-            <IconEmail />
-            <label htmlFor="email-user">Seu Email</label>
-            <Input
-              type="email"
-              placeholder="Email"
-              id="email-user"
-              name="email-user"
-            />
-          </div>
-
-          <textarea
-            placeholder="Digite sua mensagem aqui..."
-            className="input-form"
-          />
-
-          <button type="button">Enviar Mensagem</button>
-        </form>
+            <button type="button">Enviar Mensagem</button>
+          </form>
+        </div>
       </section>
 
       <footer>

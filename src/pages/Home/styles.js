@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { RiUser3Fill } from "react-icons/ri";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import BgForm from "../../assets/bg-form.png";
 
 export const Container = styled.main`
   height: 100vh;
 
   .content {
     padding: 0 4rem;
-    width: min(140rem, 100%);
+    width: min(150rem, 100%);
     margin: 0 auto;
   }
 
@@ -131,6 +132,10 @@ export const Container = styled.main`
         filter: brightness(1.2);
       }
     }
+
+    img {
+      display: none;
+    }
   }
 
   footer {
@@ -143,7 +148,7 @@ export const Container = styled.main`
     background: ${({ theme }) => theme.COLORS.PURPLE_LINEAR};
   }
 
-  @media (min-width: 1023px) {
+  @media (min-width: 1205px) {
     .initial-content {
       flex-direction: row-reverse;
       justify-content: space-between;
@@ -153,11 +158,29 @@ export const Container = styled.main`
         img {
           margin-top: 18rem;
         }
+
+        p {
+          text-align: start;
+        }
       }
     }
-    .cards .flex-cards,
-    .form-content {
+    .cards .flex-cards {
       flex-direction: row;
+    }
+
+    .form-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 9.2rem;
+      margin: 0;
+
+      background: url(${BgForm}) no-repeat right;
+
+      form {
+        max-width: 50rem;
+        margin: 7.8rem 0 6.5rem;
+      }
     }
   }
 

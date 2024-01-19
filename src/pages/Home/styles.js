@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { RiUser3Fill } from "react-icons/ri";
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 export const Container = styled.main`
   height: 100vh;
 
   .content {
     padding: 0 4rem;
-    width: min(112rem, 100%);
+    width: min(120rem, 100%);
     margin: 0 auto;
   }
 
@@ -71,9 +73,66 @@ export const Container = styled.main`
     padding-top: 5.2rem;
     padding-bottom: 5.2rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    .flex-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  .form-content {
+    margin: 7.8rem auto 6.5rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      color: ${({ theme }) => theme.COLORS.PINK};
+      margin-bottom: 4.2rem;
+    }
+
+    label {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .input-form {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+
+      border: 1.5px solid ${({ theme }) => theme.COLORS.PURPLE};
+      border-radius: 1.6rem;
+      padding: 1.2rem 1.6rem;
+    }
+
+    textarea {
+      resize: none;
+      height: 9.8rem;
+      outline: none;
+    }
+
+    button {
+      padding: 1.6rem;
+      border-radius: 1.6rem;
+      border: none;
+
+      background: ${({ theme }) => theme.COLORS.PURPLE_LINEAR};
+      color: ${({ theme }) => theme.COLORS.WHITE};
+
+      max-width: 14rem;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
   }
 
   @keyframes topDown {
@@ -87,4 +146,18 @@ export const Container = styled.main`
       transform: translateY(1rem);
     }
   }
+`;
+
+export const IconUser = styled(RiUser3Fill)`
+  width: 2.4rem;
+  height: 2.4rem;
+
+  color: ${({ theme }) => theme.COLORS.PINK};
+`;
+
+export const IconEmail = styled(MdOutlineAlternateEmail)`
+  width: 2.4rem;
+  height: 2.4rem;
+
+  color: ${({ theme }) => theme.COLORS.PINK};
 `;

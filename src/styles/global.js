@@ -11,7 +11,7 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
-  html, body, input {
+  html, body, input, textarea {
     font-family: 'Mulish', sans-serif;
   }
 

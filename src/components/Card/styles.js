@@ -22,14 +22,13 @@ export const Container = styled.article`
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: clamp(2.8rem, 2.1rem + 0.625vw, 3.5rem);
     color: ${({ theme }) => theme.COLORS.PINK};
   }
 
   p {
     margin-top: 2rem;
-
-    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.486rem + 0.357vw, 2rem);
   }
 
   @keyframes rotate {

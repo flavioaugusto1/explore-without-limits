@@ -20,8 +20,7 @@ export const Container = styled.main`
     margin-bottom: 9.3rem;
 
     img {
-      width: 32rem;
-      height: 37rem;
+      width: clamp(25.4rem, 22.257rem + 24.696vw, 65rem);
       margin-bottom: 1.7rem;
 
       animation-name: topDown;
@@ -41,16 +40,15 @@ export const Container = styled.main`
       }
 
       h1 {
-        font-size: 3.2rem;
+        font-size: clamp(3.2rem, 2.457rem + 2.321vw, 5.8rem);
         margin-bottom: 0.5rem;
 
         color: ${({ theme }) => theme.COLORS.PINK};
       }
 
       p {
-        font-size: 2rem;
+        font-size: clamp(2rem, 1.657rem + 1.071vw, 3.2rem);
         font-weight: 600;
-
         margin-bottom: 3.5rem;
       }
 
@@ -149,10 +147,6 @@ export const Container = styled.main`
     .initial-content {
       flex-direction: row-reverse;
       justify-content: space-between;
-      img {
-        width: 72rem;
-        height: 73rem;
-      }
 
       .titles {
         align-items: flex-start;

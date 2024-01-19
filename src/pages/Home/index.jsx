@@ -78,7 +78,7 @@ export function Home() {
       </section>
 
       <footer>
-        <p>teste</p>
+        <p>&copy; 2023 - fladev</p>
       </footer>
     </Container>
   );

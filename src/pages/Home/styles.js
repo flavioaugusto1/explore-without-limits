@@ -135,6 +135,16 @@ export const Container = styled.main`
     }
   }
 
+  footer {
+    text-align: center;
+    padding: 1.6rem;
+
+    font-size: 2rem;
+    
+    color: ${({ theme }) => theme.COLORS.WHITE};
+    background: ${({ theme }) => theme.COLORS.PURPLE_LINEAR};
+  }
+
   @keyframes topDown {
     0% {
       transform: translateY(-100%);

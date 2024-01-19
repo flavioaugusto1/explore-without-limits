@@ -73,7 +73,7 @@ export function Home() {
             className="input-form"
           />
 
-          <button>Enviar Mensagem</button>
+          <button type="button">Enviar Mensagem</button>
         </form>
       </section>
 

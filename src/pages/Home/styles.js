@@ -20,7 +20,7 @@ export const Container = styled.main`
     margin-bottom: 9.3rem;
 
     img {
-      width: 36.4rem;
+      width: 32rem;
       height: 37rem;
       margin-bottom: 1.7rem;
 

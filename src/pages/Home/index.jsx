@@ -15,8 +15,10 @@ export function Home() {
       <section className="content initial-content">
         <img src={Logo} alt="imagem de um astronauta com planetas ao redor" />
         <div className="titles">
-          <h1>Explore sem limites</h1>
-          <p>Porque o aprendizado é contínuo</p>
+          <div>
+            <h1>Explore sem limites</h1>
+            <p>Porque o aprendizado é contínuo</p>
+          </div>
           <img src={KeyDown} alt="imagem de uma seta apontando para baixo" />
         </div>
       </section>

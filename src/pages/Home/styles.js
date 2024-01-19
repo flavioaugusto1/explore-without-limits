@@ -7,7 +7,7 @@ export const Container = styled.main`
 
   .content {
     padding: 0 4rem;
-    width: min(120rem, 100%);
+    width: min(140rem, 100%);
     margin: 0 auto;
   }
 
@@ -140,9 +140,31 @@ export const Container = styled.main`
     padding: 1.6rem;
 
     font-size: 2rem;
-    
+
     color: ${({ theme }) => theme.COLORS.WHITE};
     background: ${({ theme }) => theme.COLORS.PURPLE_LINEAR};
+  }
+
+  @media (min-width: 1023px) {
+    .initial-content {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      img {
+        width: 72rem;
+        height: 73rem;
+      }
+
+      .titles {
+        align-items: flex-start;
+        img {
+          margin-top: 18rem;
+        }
+      }
+    }
+    .cards .flex-cards,
+    .form-content {
+      flex-direction: row;
+    }
   }
 
   @keyframes topDown {
